@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@800&display=swap" rel="stylesheet">
+
+  
+  <title>Frontend Mentor | E-commerce product page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    .navbar{
+      list-style-type: none;
+      margin: 0px 0px 0px 20px;
+      padding: 0;
+    }
+    .main{
+      width: 70%;
+      margin: auto;
+    }
+    .header{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+    li{
+      float: left;
+    }
+    li a{
+      display: block;
+      padding: 15px;
+      text-decoration: none;
+      color: gray;
+    }
+    .cart{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      
+    }
+    .sneak{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+    .cards{
+      display: flex;
+      flex-direction: row;
+      align-items:center;
+      justify-content: space-between;
+    }
+    .imagediv{
+      width: 450px;
+      height: 500px;
+      display: flex;
+      flex-direction: column;
+      margin-top: 40px;
+      /* justify-content: space-around; */
+    }
+    .textdiv{
+      width: 450px;
+      height: 500px;
+    }
+    .large{
+      margin-left: 40px;
+      border-radius: 5px;
+    }
+    .large img{
+      border-radius: 10px;
+    }
+    .small{
+      margin-top: 40px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+    .thumbnail{
+      height: 90px;
+      width: 90px;
+      border-radius: 5px;
+    }
+    #sneaker{
+      text-transform: uppercase;
+      color: hsl(26, 100%, 55%);
+      font-size: 13px;
+    }
+    #fall{
+      font-family: 'Kumbh Sans', sans-serif;
+      font-weight: 700;
+      font-size: 35px;
+    }
+    #paragraph{
+      font-size: 16px;
+      opacity: 0.7;
+    }
+    .tally{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+    .no_div{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+      width: 50%;
+      background-color: hsl(223, 64%, 98%);
+      border-radius: 5px;
+    }
+    .cartbox{
+      background-color: hsl(26, 100%, 55%);
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      width: 50%;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="main">
+    <div class="header">
+      <div class="sneak">
+        <img src="images/logo.svg" alt="">
+        <ul class="navbar">
+          <li>
+            <a href="#">Collections</a>
+          </li>
+          <li>
+            <a href="#">Men</a>
+          </li>
+          <li>
+            <a href="#">Women</a>
+          </li>
+          <li>
+            <a href="#">About</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <div class="cart">
+        <img src="images/icon-cart.svg" alt="icon-cart" style="margin: 0px 40px 0px 0px;">
+        <img src="images/image-avatar.png" alt="image-avatar" width="50px" height="50px">
+      </div>
+    </div> 
+    <!-- end of header -->
+    <hr style="opacity: 0.3; margin-top: 20px;">
+
+    <div class="cards">
+      <div class="imagediv">
+        <div class="large">
+          <img src="images/image-product-1.jpg" alt="image-product-1" height="320" width="320";>
+        </div>
+        <div class="small">
+          <img class="thumbnail" src="images/image-product-1-thumbnail.jpg" alt="image-product-1-thumbnail">
+          <img class="thumbnail" src="images/image-product-2-thumbnail.jpg" alt="image-product-2-thumbnail">
+          <img class="thumbnail" src="images/image-product-3-thumbnail.jpg" alt="image-product-3-thumbnail">
+          <img class="thumbnail" src="images/image-product-4-thumbnail.jpg" alt="image-product-4-thumbnail">
+        </div>
+      </div>
+      <div class="textdiv">
+        <p id="sneaker" style="margin-top: 40px;"><b>Sneaker Company</b></p>
+        <h3 id="fall">Fall Limited Edition Sneakers</h3>
+        <p id="paragraph">These low-profile sneakers are your perfect casual wear companion. Featuring a 
+          durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+        <p style="font-family: 'Kumbh Sans', sans-serif; font-size: 13px;"><span style="font-size: 22px;">$125.00</span>
+          <span style="color: orange;"><span style="margin-left: 10px;">50%</span></span> <br> <del>$250.00</del></p>
+        <div class="tally">
+          <div class="no_div">
+            <img src="images/icon-minus.svg" alt="icon-minus">
+            <p>0</p>
+            <img src="images/icon-plus.svg" alt="icon plus" style="color: white;">
+          </div>
+          <div class="cartbox">
+            <img src="images/icon-cart.svg" alt="icon-cart">
+            <p style="margin-left: 10px; color: white; font-family:'Kumbh Sans', sans-serif; font-size: 13px">Add to cart</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">kimfelix</a>.
+  </div> -->
+</body>
+</html>
